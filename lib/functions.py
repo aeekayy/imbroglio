@@ -12,3 +12,6 @@ class Functions(object):
 
 	def sigmoid_der(x):
 		return Functions.sigmoid(x)*(1 - Functions.sigmoid(x))
+
+	def step(threshold, value):
+		return 1 if (value > threshold) else 0
